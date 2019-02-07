@@ -21,7 +21,7 @@ public class StringCoder {
             int count = 1;
             for (int i = 0; i < charList.size(); i++) {
                 if (i < charList.size() - 1) {
-                    while (charList.get(i).equals(charList.get(i + 1))) {
+                    while (i < charList.size() - 1 && charList.get(i).equals(charList.get(i + 1))) {
                         count++;
                         i++;
                     }
@@ -30,7 +30,10 @@ public class StringCoder {
 
                 }
             }
-            result = result.concat(charList.get(charList.size() - 1).toString()) + count;
+            if (!charList.get(charList.size() - 1).equals(charList.get(charList.size() - 2))) {
+                result = result.concat(charList.get(charList.size() - 1).toString()) + count;
+            }
+
 
             System.out.println(result);
             return result;
