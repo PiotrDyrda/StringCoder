@@ -41,4 +41,18 @@ public class StringCoderTest {
     public void schouldReturnProperlyCodedString(){
         assertEquals(expectedCode,stringCoder.code(input));
     }
+
+    @Test
+    public void schouldProperlyCountLastCharacter(){
+        assertEquals(expectedCode,stringCoder.code(input));
+//        assertEquals("d1e1h1l3o2r1w2", stringCoder.code("Hello wowrld"));
+//        assertEquals("a1d1e3f1l1n1o2p1r2s1t2u1y4", stringCoder.code("Don't repeyyyat yourself"));
+    }
+
+    @Test
+    public void schouldProperlyCountFirstCharacter(){
+        assertEquals(expectedCode,stringCoder.code(input));
+//        assertEquals("a4k1l1m1o1t1", stringCoder.code("Ala ma kota"));
+//        assertEquals("a3e2i1j1m1o1s2v1w1", stringCoder.code("Java is awesome"));
+    }
 }
