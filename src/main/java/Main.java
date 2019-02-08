@@ -1,11 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        StringCoder.code("Hello world");
-        StringCoder.code("Hello wowrld");
-        StringCoder.code("Ala ma kota");
-        StringCoder.code("Java is awesome");
-        StringCoder.code("Don't repeat yourself");
-        StringCoder.code("Don't repeyyyat yourself");
+        StringCoder stringCoder = new StringCoder();
+        stringCoder.code("Hello world");
+        stringCoder.code("Hello wowrld");
+        stringCoder.code("Ala ma kota");
+        stringCoder.code("Java is awesome");
+        stringCoder.code("Don't repeat yourself");
+        stringCoder.code("Don't repeyyyat yourself");
     }
 }

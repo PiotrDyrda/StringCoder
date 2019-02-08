@@ -2,11 +2,12 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.counting;
 
 public class StringCoder {
 
-    public static String code(String stringToCode) {
+    public  String code(String stringToCode) {
         if (stringToCode.equals("")) {
             System.out.println("empty string");
             return null;
